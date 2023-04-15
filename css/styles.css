@@ -405,11 +405,12 @@ body {
 .cust-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
+  color: var(--textcolor);
 }
 
 .clients {
@@ -424,6 +425,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--clienticonfill);
   border: 1px solid var(--clienticonfill);
   border-radius: 4px;
   fill: var(--clienticonfill);
@@ -431,8 +433,13 @@ body {
 
 .client-icon:hover,
 .client-icon:focus {
+  color: var(--activebackbtncolor);
   fill: var(--activebackbtncolor);
   border-color: var(--activebackbtncolor);
+}
+
+.cust-icon {
+  fill: currentColor;
 }
 
 /* Перша секція Portfolio */
@@ -478,12 +485,12 @@ body {
   margin-bottom: 72px;
 }
 
-.item-card {
+.down-card {
   display: block;
 }
 
-.item-card:hover,
-.item-card:focus {
+.down-card:hover,
+.down-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -491,7 +498,6 @@ body {
 .item-photo {
   display: flex;
   flex-wrap: wrap;
-
   gap: 24px;
   row-gap: 48px;
 }
@@ -569,8 +575,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondarycolor);
-  margin-bottom: 8px;
+  color: var(--backgroundcolor);
+  margin-bottom: 16px;
 }
 
 .foot-links {
